@@ -2,17 +2,24 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>ToDo</title>
-	<link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>
+	<title>ToDoList</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="main">
-		<input type="text" id="txt" placeholder="Что тебе нужно сделать?" size="100" autofocus="true">
-		<button id="add" onclick="addBtn()">+</button>
+
+	<div id="div" class="header">
+		<input type="text" id="input" placeholder="title" autofocus="true">
+		<span class="addBtn" onclick="newElem()">Add</span>
 	</div>
-	<div id="tasks">
-		
-	</div>
+
+	<ul id="ul">
+		<li class="checked">Task 1</li>
+		<li>Task 2</li>
+		<li>Task 3</li>
+		<li>Task 4</li>
+		<li>Task 5</li>
+	</ul>
+
+	<script src="script.js"></script>
 </body>
 </html>
